@@ -6,8 +6,7 @@ Your flag not here? Create an issue on the right.
 
 HOW TO INSTALL (Desktop - Chrome/Firefox)
 ==========
-
-This has been moved to here: https://flaghunters.github.io/Extra-Flags-for-4chan/
+Click here to install the script: https://github.com/flagzzzz/Extra-Flags-for-4chan/blob/master/Extra_Flags_for_int_2_flag.user.js
 <br>
 <br>
 Works with:
