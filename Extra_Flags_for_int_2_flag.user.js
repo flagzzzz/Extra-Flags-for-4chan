@@ -15,8 +15,8 @@
 // @grant       GM_setValue
 // @grant       GM_addStyle
 // @run-at      document-end
-// @updateURL	https://pastebin.com/PLtKPQc6
-// @downloadURL	https://pastebin.com/PLtKPQc6
+// @updateURL	https://github.com/flagzzzz/Extra-Flags-for-4chan/raw/master/Extra_Flags_for_int_2_flag.user.js
+// @downloadURL	https://github.com/flagzzzz/Extra-Flags-for-4chan/raw/master/Extra_Flags_for_int_2_flag.user.js
 // ==/UserScript==
 
 //updates at http://pastebin.com/PLtKPQc6
