@@ -10,6 +10,7 @@ Lezhe
 Shkoder
 Tirana
 Vlore
+Swains Island
 Andorra la Vella
 Canillo
 Encamp
@@ -356,17 +357,24 @@ Vratza
 Yambol
 Phnom Penh
 Alberta
+Brampton
 British Columbia
+Burnaby
 Calgary
 Cornwall
 Edmonton
+Gatineau
 Halifax
 Hamilton
 Iqaluit
 Iroquois
+Kitchener
+Laval
 London
+Longueuil
 Manitoba
 Markham
+Mississauga
 Montreal
 New Brunswick
 Newfoundland and Labrador
@@ -381,11 +389,14 @@ Prince Edward Island
 Quebec City
 Quebec
 Regina
+Richmond
 Saskatchewan
 Saskatoon
 Sudbury
+Surrey
 Toronto
 Vancouver
+Vaughan
 Victoria
 Whitehorse
 Windsor
@@ -566,6 +577,8 @@ Vysocina
 Zdar nad Sazavou
 Zlin
 Znojmo
+Katanga
+Kinshasa
 Aeroe
 Bornholm
 Hovedstaden
@@ -716,6 +729,7 @@ Chuuk
 Kosrae
 Pohnpei
 Yap
+Suva
 Etela-Karjala
 Etela-Pohjanmaa
 Etela-Savo
@@ -756,9 +770,19 @@ Picardie
 Poitou-Charentes
 Provence-Alpes-Cotes d Azur
 Rhone-Alpes
+Cayenne
 Austral Islands
+Bora Bora
 Gambier Islands
+Huahine
+Makatea
 Marquesas Islands
+Maupiti
+Moorea
+Raiatea
+Rapa
+Society Islands
+Tahiti
 Tuamotus
 Abkhazia
 Adjara
@@ -907,27 +931,45 @@ Kreis Aachen
 Kreis Bergstrasse
 Kreis Borken
 Kreis Coesfeld
+Kreis Dahme-Spreewald
 Kreis Dithmarschen
 Kreis Duren
+Kreis Euskirchen
 Kreis Gross-Gerau
 Kreis Gutersloh
 Kreis Heinsberg
 Kreis Herford
+Kreis Herzogtum Lauenburg
 Kreis Hoxter
+Kreis Kleve
 Kreis Lippe
+Kreis Ludwigslust-Parchim
+Kreis Markisch-Oderland
 Kreis Mettmann
 Kreis Minden-Lubbecke
 Kreis Nordfriesland
+Kreis Oberhavel
 Kreis Olpe
 Kreis Ostholstein
 Kreis Paderborn
 Kreis Pinneberg
+Kreis Plon
+Kreis Potsdam-Mittelmark
+Kreis Prignitz
+Kreis Recklinghausen
+Kreis Rendsburg-Eckernforde
 Kreis Schleswig-Flensburg
+Kreis Segeberg
+Kreis Siegen-Wittgenstein
 Kreis Soest
+Kreis Spree-Neisse
+Kreis Steinburg
 Kreis Steinfurt
 Kreis Stormarn
+Kreis Uckermark
 Kreis Unna
 Kreis Viersen
+Kreis Vorpommern-Greifswald
 Kreis Warendorf
 Kreis Wesel
 Kreuzau
@@ -959,6 +1001,7 @@ Landkreis Bayreuth
 Landkreis Berchtesgadener Land
 Landkreis Bernkastel-Wittlich
 Landkreis Biberach
+Landkreis Birkenfeld
 Landkreis Boblingen
 Landkreis Borde
 Landkreis Breisgau-Hochschwarzwald
@@ -994,8 +1037,10 @@ Landkreis Fulda
 Landkreis Furstenfeldbruck
 Landkreis Furth
 Landkreis Garmisch-Partenkirchen
+Landkreis Germersheim
 Landkreis Giessen
 Landkreis Gifhorn
+Landkreis Goppingen
 Landkreis Gorlitz
 Landkreis Goslar
 Landkreis Gotha
@@ -1017,6 +1062,7 @@ Landkreis Hildesheim
 Landkreis Hof
 Landkreis Holzminden
 Landkreis Jerichower Land
+Landkreis Kaiserslautern
 Landkreis Karlsruhe
 Landkreis Kassel
 Landkreis Kelheim
@@ -1031,6 +1077,7 @@ Landkreis Leer
 Landkreis Leipzig
 Landkreis Lichtenfels
 Landkreis Limburg-Weilburg
+Landkreis Lindau
 Landkreis Lorrach
 Landkreis Luchow-Dannenberg
 Landkreis Ludwigsburg
@@ -1040,6 +1087,7 @@ Landkreis Mainz-Bingen
 Landkreis Mansfeld-Sudharz
 Landkreis Marburg-Biedenkopf
 Landkreis Mayen-Koblenz
+Landkreis Mecklenburgische Seenplatte
 Landkreis Meissen
 Landkreis Merzig-Wadern
 Landkreis Miesbach
@@ -1057,6 +1105,7 @@ Landkreis Neuwied
 Landkreis Nienburg-Weser
 Landkreis Nordhausen
 Landkreis Nordsachsen
+Landkreis Nordwestmecklenburg
 Landkreis Northeim
 Landkreis Nurnberger Land
 Landkreis Oberallgau
@@ -1112,6 +1161,7 @@ Landkreis Uelzen
 Landkreis Unterallgau
 Landkreis Vechta
 Landkreis Verden
+Landkreis Vorpommern-Rugen
 Landkreis Vulkaneifel
 Landkreis Waldeck-Frankenberg
 Landkreis Waldshut
@@ -1212,6 +1262,7 @@ Rietberg
 Rodinghausen
 Rommerskirchen
 Rosenheim
+Rostock
 Ruthen
 Saale-Holzland-Kreis
 Saalekreis
@@ -1231,6 +1282,7 @@ Schwalm-Eder-Kreis
 Schwarzwald-Baar-Kreis
 Schweinfurt
 Schwelm
+Schwerin
 Schwerte
 Selm
 Siegen
@@ -1273,6 +1325,7 @@ Weimar
 Welver
 Werdohl
 Werne
+Werra-Meissner-Kreis
 Werther
 Westerwaldkreis
 Wetteraukreises
@@ -1833,21 +1886,29 @@ Kathmandu
 Mustang
 Alkmaar
 Almere
+Alphen aan de Rijn
 Ameland
+Amersfoort
 Amsterdam
+Apeldoorn
 Arnhem
 Baarn
 Breda
 Delft
 Den Bosch
 Den Haag
+Dordrecht
 Drenthe
+Ede
 Eindhoven
+Emmen
+Enschede
 Flevoland
 Friesland
 Gelderland
 Gorredijk
 Groningen
+Haarlemmermeer
 Haarlem
 Harderwijk
 Heerenveen
@@ -1860,6 +1921,7 @@ Limburg
 Maastricht
 Meppel
 Middelburg
+Nijmegen
 Noord-Brabant
 Noord-Holland
 Oegstgeest
@@ -1870,6 +1932,7 @@ Overijssel
 Rijswijk
 Rotterdam
 Schiermonnikoog
+Stad Groningen
 Stavoren
 Terneuzen
 Terschelling
@@ -1877,9 +1940,12 @@ Texel
 Tilburg
 Utrecht
 Velsen
+Venlo
 Vlieland
 Volendam
+Westland
 Weststellingwerf
+Zaandam
 Zeeland
 Zoetermeer
 Zuid-Holland
@@ -2674,6 +2740,7 @@ Uthai Thani
 Uttaradit
 Ya La
 Ya Sothon
+Niuafoou
 Arima
 Chaguanas
 Couva-Tabaquite-Talparo
