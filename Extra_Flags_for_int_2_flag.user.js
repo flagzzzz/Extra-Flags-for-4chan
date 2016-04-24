@@ -346,13 +346,19 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Birmingham", super:"West Midlands"},
+						 {name:"Bridgend", super:"Glamorgen"},
 						 {name:"Chester", super:"Cheshire"},
-			       {name:"City of London", super:"Greater London"},
-	           {name:"Durham City", super:"Durham"},
+			       			 {name:"City of London", super:"Greater London"},
+			       		 	 {name:"Isle of Portland", super:"Dorset"},
+	           				 {name:"Durham City", super:"Durham"},
 						 {name:"East Riding of Yorkshire", super:"Yorkshire"},
-			       {name:"Huntingdonshire", super:"Cambridgeshire"},
-			       {name:"North Riding of Yorkshire", super:"Yorkshire"},
+						 {name:"Horningsea", super:"Cambridgeshire"},
+						 {name:"Huntingdonshire", super:"Cambridgeshire"},
+			       			 {name:"Isle of Scilly", super:"Cornwall"},
+			       			 {name:"Newport", super:"Monmouthshire"},
+			       			 {name:"North Riding of Yorkshire", super:"Yorkshire"},
 						 {name:"Norwich", super:"Norfolk"},
+						 {name:"St Annes on the Sea", super:"Lancashire"},
 						 {name:"West Riding of Yorkshire", super:"Yorkshire"},
 						 {name:"Wing", super:"Rutland"},
 						 {name:"Wroxton", super:"Oxfordshire"}];
