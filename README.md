@@ -6,6 +6,8 @@ Your flag not here? Create an issue on the right.
 
 This is my modified version, which detects if a user is using a city flag and will display the corresponding regional flag as well as the city one. Same setup as the official one, so see https://flaghunters.github.io/Extra-Flags-for-4chan/ for guide. You only set one flag, so you can choose whether you use a city or a region flag.
 
+*USE ONLY ONE VERSION OF THE EXTRA FLAGS SCRIPT*
+
 For the official version of the script, visit https://flaghunters.github.io/Extra-Flags-for-4chan/
 
 HOW TO INSTALL (Desktop - Chrome/Firefox)
