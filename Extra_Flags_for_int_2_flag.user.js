@@ -373,7 +373,7 @@ function getRegionSuper(region, country) {
 						 {name:"Chester", super:"Cheshire"},
 			       			 {name:"City of London", super:"Greater London"},
 			       		 	 {name:"Isle of Portland", super:"Dorset"},
-	           				 {name:"Durham City", super:"Durham"},
+	           				 {name:"Durham City", super:"Durham", super2:"England"},
 						 {name:"East Riding of Yorkshire", super:"Yorkshire"},
 						 {name:"Horningsea", super:"Cambridgeshire"},
 						 {name:"Huntingdonshire", super:"Cambridgeshire"},
@@ -381,6 +381,8 @@ function getRegionSuper(region, country) {
 			       			 {name:"Newport", super:"Monmouthshire"},
 			       			 {name:"North Riding of Yorkshire", super:"Yorkshire"},
 						 {name:"Norwich", super:"Norfolk"},
+						 {name:"Orkney", super2:"Scotland"},
+						 {name:"Oxfordshire", super2:"England"},
 						 {name:"St Annes on the Sea", super:"Lancashire"},
 						 {name:"West Riding of Yorkshire", super:"Yorkshire"},
 						 {name:"Wing", super:"Rutland"},
@@ -395,7 +397,7 @@ function getRegionSuper(region, country) {
 	}	else {
 		for (var i = 0; i < cities.length; i++) {
 			if (cities[i].name === region) {
-				return cities[i].super;
+				return cities[i];
 				break;
 			}
 	  }
@@ -453,19 +455,33 @@ function onFlagsLoad(response) {
 		var nameBlock = postInfo.getElementsByClassName('nameBlock')[0];
 		var currentFlag = nameBlock.getElementsByClassName('flag')[0];
 		
-		var regionSuper = getRegionSuper(post.region, currentFlag.title);
-
-		if (regionSuper !== " ") {
-		  var newRegionFlag = document.createElement('b');
-		  nameBlock.appendChild(newRegionFlag);
-		  newRegionFlag.title = regionSuper;
-      var newRegionFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
-      newRegionFlag.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper + ".png'" + newRegionFlagImgOpts + ">";
-      newRegionFlag.className = "extraRegionFlag";
-      newRegionFlag.href = "https://www.google.com/search?q=" + regionSuper + ", " + currentFlag.title;
-      newRegionFlag.target = '_blank';
-      newRegionFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
-    }
+		//var regionSuper = getRegionSuper(post.region, currentFlag.title);
+		var city = getRegionSuper(post.region, currentFlag.title);
+		if (city === " ") {
+			var regionSuper = " ";
+		} else if (typeof city.super !== 'undefined' && city.super !== null) {
+			var regionSuper = city.super;
+		} else {
+			regionSuper = " ";
+		}
+		
+		if (typeof city.super2 !== 'undefined' && city.super2 !== null) {
+			 var regionSuper2 = city.super2;
+		} else {
+			 var regionSuper2 = " ";
+		}
+		
+		if (regionSuper2 !== " ") {
+			var newRegionFlag2 = document.createElement('c');
+			nameBlock.appendChild(newRegionFlag2);
+			newRegionFlag2.title = regionSuper2;
+			var newRegionFlagImgOpts2 = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag2\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
+			newRegionFlag2.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper2 + ".png'" + newRegionFlagImgOpts2 + ">";
+			newRegionFlag2.className = "extraRegionFlag2";
+			newRegionFlag2.href = "https://www.google.com/search?q=" + regionSuper2 + ", " + currentFlag.title;
+			newRegionFlag2.target = '_blank';
+			newRegionFlag2.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+		}
 		
 		var newFlag = document.createElement('a');
 		nameBlock.appendChild(newFlag);
