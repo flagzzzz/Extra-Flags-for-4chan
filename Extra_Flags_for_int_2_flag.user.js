@@ -367,26 +367,34 @@ function getRegionSuper(region, country) {
 			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
 	} else if (country == "United Kingdom") {
-		cities = [{name:"Birmingham", super:"West Midlands"},
+		cities = [{name:"Birmingham", super:"West Midlands", super2:"England"},
 						 {name:"Black Country", super:"West Midlands", super2:"England"},
 						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
+						 {name:"Cambridgeshire", super2:"England"},
+						 {name:"Ceredigion", super2:"Wales"},
 						 {name:"Chester", super:"Cheshire", super2:"England"},
 			       			 {name:"City of London", super:"Greater London", super2:"England"},
+			       			 {name:"Cornwall", super2:"England"},
 			       		 	 {name:"Isle of Portland", super:"Dorset", super2:"England"},
+			       		 	 {name:"Devon", super2:"England"},
 	           				 {name:"Durham City", super:"Durham", super2:"England"},
 						 {name:"East Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Greater Manchester", super2:"England"},
 						 {name:"Horningsea", super:"Cambridgeshire", super2:"England"},
 						 {name:"Huntingdonshire", super:"Cambridgeshire", super2:"England"},
 			       			 {name:"Isle of Scilly", super:"Cornwall", super2:"England"},
+			       			 {name:"Lancashire", super2:"England"},
 			       			 {name:"Newport", super:"Monmouthshire", super2:"Wales"},
 			       			 {name:"North Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Norwich", super:"Norfolk", super2:"England"},
 						 {name:"Orkney", super2:"Scotland"},
 						 {name:"Oxfordshire", super2:"England"},
+						 {name:"South Yorkshire", super2:"England"},
 						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
 						 {name:"West Midlands", super2:"England"},
 						 {name:"West Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Wing", super:"Rutland", super2:"England"},
+						 {name:"Worcestershire", super2:"England"},
 						 {name:"Wroxton", super:"Oxfordshire", super2:"England"}];
 		
 	} else { //no cities/super pairing
