@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.05
+// @version     0.06
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -342,7 +342,23 @@ function getRegionSuper(region, country) {
 						 {name:"Zwolle", super:"Overijssel"},];
 		
 	} else if (country == "Poland") {
-		cities = [{name:"Gniezno", super:"Wielkopolskie"}];
+		cities = [{name:"Bialystok", super:"Podlaskie"},
+			 {name:"Bydgoszcz", super:"Kujawsko-pomorskie"},
+			 {name:"Gdansk", super:"Pomorskie"},
+			 {name:"Gniezno", super:"Wielkopolskie"},
+			 {name:"Gorzow Wielkopolski", super:"Lubuskie"},
+			 {name:"Katowice", super:"Slaskie"},
+			 {name:"Krakow", super:"Malopolskie"},
+			 {name:"Lodz", super:"Lodzkie"},
+			 {name:"Lublin", super:"Lubelskie"},
+			 {name:"Olsztyn", super:"Warminsko-mazurskie"},
+			 {name:"Opole", super:"Opolskie"},
+			 {name:"Rzeszow", super:"Podkarpackie"},
+			 {name:"Szczecin", super:"Zachodniopomorskie"},
+			 {name:"Torun", super:"Kujawsko-pomorskie"},
+			 {name:"Warsaw", super:"Mazowieckie"},
+			 {name:"Wroclaw", super:"Dolnoslaskie"},
+			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Birmingham", super:"West Midlands"},
