@@ -70,6 +70,7 @@ Launceston
 Liverpool
 Lord Howe Island
 Mackay
+Macquarie Island
 Melbourne
 Mildura
 Mornington Peninsula
@@ -696,6 +697,7 @@ San Miguel
 San Salvador
 Santa Ana
 San Vicente
+Sonsonate
 Usulutan
 Annobon
 Bioko Norte
@@ -771,19 +773,33 @@ Poitou-Charentes
 Provence-Alpes-Cotes d Azur
 Rhone-Alpes
 Cayenne
+Saint-Laurent-du-Maroni
+Arue
 Austral Islands
 Bora Bora
+Fatu Hiva
 Gambier Islands
+Hao
+Hiva Oa
 Huahine
 Makatea
 Marquesas Islands
 Maupiti
 Moorea
+Nuku Hiva
 Raiatea
+Raivavae
 Rapa
+Reao
+Rimatara
+Rurutu
 Society Islands
 Tahiti
+Tahuata
 Tuamotus
+Tubuai
+Ua Huka
+Ua Pou
 Abkhazia
 Adjara
 South Ossetia
@@ -1425,7 +1441,25 @@ St Sampson
 St Saviour
 Torteval
 Vale
+Atlantida
+Choluteca
+Colon
+Comayagua
+Copan
+Cortes
+El Paraiso
+Francisco Morazan
+Gracias a Dios
+Intibuca
+Islas de la Bahia
+La Paz
+Lempira
+Ocotepeque
+Olancho
+Santa Barbara
 Tegucigalpa
+Valle
+Yoro
 Central and West
 Islands
 Kowloon City
@@ -1884,51 +1918,282 @@ Tanintharyi
 Yangon
 Kathmandu
 Mustang
+Aa en Hunze
+Aalburg
+Aalsmeer
+Aalten
+Achtkarspelen
+Alblasserdam
+Albrandswaard
 Alkmaar
+Almelo
 Almere
 Alphen aan de Rijn
+Alphen-Chaam
 Ameland
 Amersfoort
+Amstelveen
 Amsterdam
 Apeldoorn
+Appingedam
 Arnhem
+Assen
+Asten
+Baarle-Nassau
 Baarn
+Barendrecht
+Barneveld
+Bedum
+Beek
+Beemster
+Beesel
+Bellingwede
+Bergeijk
+Berg en Dal
+Bergen (Limburg)
+Bergen (Noord-Holland)
+Bergen Op Zoom
+Berkelland
+Bernheze
+Best
+Beuningen
+Beverwijk
+Binnenmaas
+Bladel
+Blaricum
+Bloemendaal
+Bodegraven-Reeuwijk
+Boekel
+Borger-Odoorn
+Borne
+Borsele
+Boxmeer
+Boxtel
 Breda
+Brielle
+Bronckhorst
+Brummen
+Brunssum
+Bunnik
+Bunschoten
+Buren
+Capelle aan den IJssel
+Castricum
+Coevorden
+Cranendonck
+Cromstrijen
+Cuijk
+Culemborg
+Dalfsen
+Dantumadeel
+De Bilt
+De Friese Meren
 Delft
+Delfzijl
+De Marne
 Den Bosch
 Den Haag
+Den Helder
+De Ronde Venen
+Deurne
+Deventer
+De Wolden
+Diemen
+Dinkelland
+Doesburg
+Doetinchem
+Dongen
+Dongeradeel
 Dordrecht
+Drechterland
 Drenthe
+Drimmelen
+Dronten
+Druten
+Duiven
+Echt-Susteren
+Edam-Volendam
 Ede
+Eemnes
+Eemsmond
+Eersel
+Eijsden-Margraten
 Eindhoven
+Elburg
 Emmen
+Enkhuizen
 Enschede
+Epe
+Ermelo
+Etten-Leur
+Ferwerderadiel
 Flevoland
+Franekeradeel
 Friesland
+Geertruidenberg
 Gelderland
+Geldermalsen
+Geldrop-Mierlo
+Gemert-Bakel
+Gennep
+Giessenlanden
+Gilze en Rijen
+Goeree-Overflakkee
+Goes
+Goirle
+Gorinchem
 Gorredijk
+Gouda
+Grave
 Groningen
+Grootegast
+Gulpen-Wittem
+Haaksbergen
+Haaren
+Haarlemmerliede en Spaarnwoude
 Haarlemmermeer
 Haarlem
+Halderberge
+Hardenberg
 Harderwijk
+Hardinxveld-Giessendam
+Haren
+Harlingen
+Hattem
+Heemskerk
+Heemstede
+Heerde
 Heerenveen
+Heerhugowaard
 Heerlen
+Heeze-Leende
+Heiloo
+Hellendoorn
+Hellevoetsluis
+Helmond
+Hendrik Ido Ambacht
+Hengelo
+Het Bildt
+Heumen
+Heusden
+Hillegom
+Hilvarenbeek
+Hilversum
+Hof van Twente
+Hollands Kroon
+Hoogeveen
+Hoogezand-Sappemeer
+Hoorn
+Horst aan de Maas
+Houten
+Huizen
+Hulst
+IJsseltstein
+Kaag en Braassem
 Kampen
+Kapelle
 Katwijk
+Kerkrade
+Koggenland
+Kollumerland en Nieuwkruisland
+Korendijk
+Krimpen aan den IJssel
+Krimpenerwaard
+Laarbeek
+Landerd
+Landgraaf
+Landsmeer
+Langedijk
+Lansingerland
+Laren
+Leek
+Leerdam
 Leeuwarden
+Leeuwarderdeel
 Leiden
+Leiderdorp
+Leidschendam-Voorburg
+Lelystad
+Leudal
+Leusden
 Limburg
+Lingewaal
+Lingewaard
+Lisse
+Littenseradeel.pdn
+Littenseradeel
+Lochem
+Loon Op Zand
+Lopik.pdn
+Lopik
+Loppersum
+Losser
+Maasdriel
+Maasgouw
+Maassluis
 Maastricht
+Marum
+Medemblik
+Meerssen
+Menaldumdeel
+Menterwolde
 Meppel
 Middelburg
+Midden-Delfland
+Midden-Drenthe.pdn
+Midden-Drenthe
+Mill en Sint Hubert
+Moerdijk
+Molenwaard
+Montferland
+Montfoort
+Mook en Middelaar
+Neder-Betuwe
+Nederweert
+Neerijnen
+Nieuwkoop
+Nijkerk.jpg
 Nijmegen
+Noord-Beveland
 Noord-Brabant
+Noordenveld
 Noord-Holland
+Noordoostpolder
+Noordwijkerhout
+Noordwijk
+Nuenen,Gerwen en Nederwetten
+Nunspeet
+Nuth
 Oegstgeest
+Oirschot
+Oisterwijk
+Oldambt
 Oldeberkoop
+Oldebroek
+Oldenzaal
+Olst-Wijhe
+Ommen
+Onderbanken
+Oosterhout
+Oost Gelre
 Ooststellingwerf
+Oostzaan
+Opmeer
 Opsterland
+Oss
+Oud-Beijerland
+Oude IJsselstreek
+Ouder-Amstel
+Oudewater
+Overbetuwe
 Overijssel
+Papendrecht
+Peel en Maas
+Pekela
+Pijnacker-Nootdorp
+Placeholder Gooise Meren
+Purmerend
+Putten
 Rijswijk
 Rotterdam
 Schiermonnikoog
@@ -1954,9 +2219,16 @@ Zwolle
 Loyalty Islands
 North
 South
+Antipodes Islands
+Auckland Islands
+Bounty Islands
+Campbell Islands
 Chatham Islands
+Kermadec Islands
 Nelson
 Otago
+Stewart Island
+The Snares
 Boaco
 Carazo
 Chinandega
@@ -2569,6 +2841,16 @@ Southern
 Uva
 Western
 Khartoum
+Brokopondo
+Commewijne
+Coronie
+Marowijne
+Nickerie
+Paramaribo
+Para
+Saramacca
+Sipaliwini
+Wanica
 Longyearbyen
 Blekinge Lan
 Blekinge
