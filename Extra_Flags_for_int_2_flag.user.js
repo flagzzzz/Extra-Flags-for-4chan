@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.08
+// @version     0.09
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -254,29 +254,40 @@ function getRegionSuper(region, country) {
 		
 		
 	} else if (country == "Canada") {
-		cities = [{name:"Calgary", super:"Alberta"},
+		cities = [{name:"Brampton", super:"Ontario"},
+						 {name:"Burnaby", super:"British Columbia"},
+						 {name:"Calgary", super:"Alberta"},
 						 {name:"Cornwall", super:"Ontario"},
 						 {name:"Edmonton", super:"Alberta"},
+						 {name:"Gatineau", super:"Quebec"},
 						 {name:"Halifax", super:"Nova Scotia"},
 						 {name:"Hamilton", super:"Ontario"},
+						 {name:"Iqaluit", super:"Nunavut"},
 						 {name:"Iroquois", super:"Ontario"},
+						 {name:"Kitchener", super:"Ontario"},
+						 {name:"Laval", super:"Quebec"},
 						 {name:"London", super:"Ontario"},
+						 {name:"Longueuil", super:"Quebec"},
 						 {name:"Markham", super:"Ontario"},
+						 {name:"Mississauga", super:"Ontario"},
 						 {name:"Montreal", super:"Quebec"},
 						 {name:"North Vancouver", super:"British Columbia"},
 						 {name:"Ottawa", super:"Ontario"},
-			       {name:"Petersborough", super:"Ontario"},
+			       			 {name:"Petersborough", super:"Ontario"},
 						 {name:"Quebec City", super:"Quebec"},
 						 {name:"Regina", super:"Saskatchewan"},
+						 {name:"Richmond", super:"British Columbia"},
 						 {name:"Saskatoon", super:"Saskatchewan"},
 						 {name:"Sudbury", super:"Ontario"},
-			       {name:"Toronto", super:"Ontario"},
+						 {name:"Surrey", super:"British Columbia"},
+			       			 {name:"Toronto", super:"Ontario"},
 						 {name:"Vancouver", super:"British Columbia"},
+						 {name:"Vaughan", super:"Ontario"},
 						 {name:"Victoria", super:"British Columbia"},
 						 {name:"Whitehorse", super:"Yukon"},
 						 {name:"Windsor", super:"Ontario"},
 						 {name:"Winnipeg", super:"Manitoba"},
-						 {name:"Yellowknife", super:"Northwest Territories"},];
+						 {name:"Yellowknife", super:"Northwest Territories"}];
 		
 	} else if (country == "Germany") {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
@@ -285,6 +296,7 @@ function getRegionSuper(region, country) {
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
+						 {name:"Lunen", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
 		
 	} else if (country == "Italy") {
@@ -386,7 +398,9 @@ function getRegionSuper(region, country) {
 			       			 {name:"Isle of Scilly", super:"Cornwall", super2:"England"},
 			       			 {name:"Lancashire", super2:"England"},
 			       			 {name:"Leicestershire", super2:"England"},
+			       			 {name:"Merseyside", super2:"England"},
 			       			 {name:"Newport", super:"Monmouthshire", super2:"Wales"},
+			       			 {name:"Norfolk", super2:"England"},
 			       			 {name:"North Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Norwich", super:"Norfolk", super2:"England"},
 						 {name:"Orkney", super2:"Scotland"},
