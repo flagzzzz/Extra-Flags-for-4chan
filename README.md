@@ -9,10 +9,11 @@ This is my modified version, which detects if a user is using a city flag and wi
 Because PK is working to implement city and region flags in the official script, this is only a temporary project.
 
 *USE ONLY ONE VERSION OF THE EXTRA FLAGS SCRIPT*
+==
 
 For the official version of the script, visit https://flaghunters.github.io/Extra-Flags-for-4chan/
 
-HOW TO INSTALL (Desktop - Chrome/Firefox)
+HOW TO INSTALL (Desktop - Chrome/Firefox/Opera)
 ==========
 If you are using Firefox, download GreaseMonkey
 
@@ -20,7 +21,11 @@ If you are using Chrome, download TamperMonkey
 
 If you are using Opera, dowload ViolentMonkey
 
-Click here to install the script: https://github.com/flagzzzz/Extra-Flags-for-4chan/raw/master/Extra_Flags_for_int_2_flag.user.js
+
+
+**Click here to install the script:** https://github.com/flagzzzz/Extra-Flags-for-4chan/raw/master/Extra_Flags_for_int_2_flag.user.js
+
+**Go to the "Set up extra flags for /int/" menu and set your flag again after downloading this script**
 
 If you are having trouble, go to https://flaghunters.github.io/Extra-Flags-for-4chan/ and check out the great tutorials
 <br>
