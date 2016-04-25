@@ -280,8 +280,10 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "Germany") {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
-			       {name:"Dortmund", super:"Nordrhein-Westfalen"},
+						 {name:"Braunscheig", super:"Niedersaschen"},
+			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
+						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
 		
@@ -366,6 +368,7 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Birmingham", super:"West Midlands"},
+						 {name:"Black Country", super:"West Midlands"},
 						 {name:"Bridgend", super:"Glamorgen"},
 						 {name:"Chester", super:"Cheshire"},
 			       			 {name:"City of London", super:"Greater London"},
