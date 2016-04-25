@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.06
+// @version     0.07
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -368,25 +368,26 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Birmingham", super:"West Midlands"},
-						 {name:"Black Country", super:"West Midlands"},
-						 {name:"Bridgend", super:"Glamorgen"},
-						 {name:"Chester", super:"Cheshire"},
-			       			 {name:"City of London", super:"Greater London"},
-			       		 	 {name:"Isle of Portland", super:"Dorset"},
+						 {name:"Black Country", super:"West Midlands", super2:"England"},
+						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
+						 {name:"Chester", super:"Cheshire", super2:"England"},
+			       			 {name:"City of London", super:"Greater London", super2:"England"},
+			       		 	 {name:"Isle of Portland", super:"Dorset", super2:"England"},
 	           				 {name:"Durham City", super:"Durham", super2:"England"},
-						 {name:"East Riding of Yorkshire", super:"Yorkshire"},
-						 {name:"Horningsea", super:"Cambridgeshire"},
-						 {name:"Huntingdonshire", super:"Cambridgeshire"},
-			       			 {name:"Isle of Scilly", super:"Cornwall"},
-			       			 {name:"Newport", super:"Monmouthshire"},
-			       			 {name:"North Riding of Yorkshire", super:"Yorkshire"},
-						 {name:"Norwich", super:"Norfolk"},
+						 {name:"East Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Horningsea", super:"Cambridgeshire", super2:"England"},
+						 {name:"Huntingdonshire", super:"Cambridgeshire", super2:"England"},
+			       			 {name:"Isle of Scilly", super:"Cornwall", super2:"England"},
+			       			 {name:"Newport", super:"Monmouthshire", super2:"Wales"},
+			       			 {name:"North Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Norwich", super:"Norfolk", super2:"England"},
 						 {name:"Orkney", super2:"Scotland"},
 						 {name:"Oxfordshire", super2:"England"},
-						 {name:"St Annes on the Sea", super:"Lancashire"},
-						 {name:"West Riding of Yorkshire", super:"Yorkshire"},
-						 {name:"Wing", super:"Rutland"},
-						 {name:"Wroxton", super:"Oxfordshire"}];
+						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
+						 {name:"West Midlands", super2:"England"},
+						 {name:"West Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Wing", super:"Rutland", super2:"England"},
+						 {name:"Wroxton", super:"Oxfordshire", super2:"England"}];
 		
 	} else { //no cities/super pairing
 		return " ";
