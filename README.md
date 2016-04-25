@@ -15,7 +15,9 @@ For the official version of the script, visit https://flaghunters.github.io/Extr
 HOW TO INSTALL (Desktop - Chrome/Firefox)
 ==========
 If you are using Firefox, download GreaseMonkey
+
 If you are using Chrome, download TamperMonkey
+
 If you are using Opera, dowload ViolentMonkey
 
 Click here to install the script: https://github.com/flagzzzz/Extra-Flags-for-4chan/raw/master/Extra_Flags_for_int_2_flag.user.js
