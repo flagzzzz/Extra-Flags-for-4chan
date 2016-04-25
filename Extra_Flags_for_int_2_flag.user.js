@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.09
+// @version     0.10
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -230,14 +230,39 @@ function getRegionSuper(region, country) {
 	} else if (country == "Australia") {
 		cities = [{name:"Adelaide", super:"South Australia"},
 						 {name:"Alice Springs", super:"Northern Territory"},
+						 {name:"Ballarat", super:"Victoria"},
+						 {name:"Bendigo", super:"Victoria"},
+						 {name:"Botany Bay", super:"New South Wales"},
 						 {name:"Brisbane", super:"Queensland"},
+						 {name:"Broome", super:"Western Australia"},
+						 {name:"Cairns", super:"Queensland"},
+						 {name:"Darwin", super:"Northern Territory"},
+						 {name:"Devonport", super:"Tasmania"},
+						 {name:"Fremantle", super:"Western Australia"},
+						 {name:"Geelong", super:"Victoria"},
+						 {name:"Gold Coast", super:"Queensland"},
 						 {name:"Greater Melbourne", super:"Victoria"},
 						 {name:"Greater Sydney", super:"New South Wales"},
 						 {name:"Hobart", super:"Tasmania"},
+						 {name:"Launceston", super:"Tasmania"},
+						 {name:"Liverpool", super:"New South Wales"},
 						 {name:"Lord Howe Island", super:"New South Wales"},
 						 {name:"Mackay", super:"Victoria"},
 						 {name:"Melbourne", super:"Victoria"},
-						 {name:"Sydney", super:"New South Wales"},];
+						 {name:"Mildura", super:"Victoria"},
+						 {name:"Mornington Peninsula", super:"Victoria"},
+						 {name:"Mount Gambier", super:"South Australia"},
+						 {name:"Newcastle", super:"New South Wales"},
+						 {name:"Parramatta", super:"New South Wales"},
+						 {name:"Perth", super:"Western Australia"},
+						 {name:"Port Hedland", super:"Western Australia"},
+						 {name:"Rockhampton", super:"Queensland"},
+						 {name:"Surf Coast", super:"Victoria"},
+						 {name:"Sydney", super:"New South Wales"},
+						 {name:"Toowoomba", super:"Queensland"},
+						 {name:"Townsville", super:"Queensland"},
+						 {name:"Whitsunday Islands", super:"Queensland"},
+						 {name:"Wollongong", super:"New South Wales"}];
 		
 	} else if (country == "Brazil") {
 		cities = [{name:"Abreu e Lima", super:"Pernambuco"},
@@ -297,10 +322,12 @@ function getRegionSuper(region, country) {
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
 						 {name:"Lunen", super:"Nordrhein-Westfalen"},
+						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
 		
 	} else if (country == "Italy") {
-	  cities = [{name:"Rome", super:"Lazio"}];
+	  cities = [{name:"Catania", super:"Sicilia"},
+	  					{name:"Rome", super:"Lazio"}];
 		
   }	else if (country == "Netherlands") {
 		cities = [{name:"Alkmaar", super:"Noord-Holland"},
@@ -379,7 +406,8 @@ function getRegionSuper(region, country) {
 			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
 	} else if (country == "United Kingdom") {
-		cities = [{name:"Birmingham", super:"West Midlands", super2:"England"},
+		cities = [{name:"Ayrshire", super2:"Scotland"},
+						 {name:"Birmingham", super:"West Midlands", super2:"England"},
 						 {name:"Black Country", super:"West Midlands", super2:"England"},
 						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
 						 {name:"Cambridgeshire", super2:"England"},
