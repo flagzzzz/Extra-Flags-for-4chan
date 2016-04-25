@@ -483,6 +483,18 @@ function onFlagsLoad(response) {
 			newRegionFlag2.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
 		}
 		
+		if (regionSuper !== " ") {
+		  var newRegionFlag = document.createElement('b');
+		  nameBlock.appendChild(newRegionFlag);
+		  newRegionFlag.title = regionSuper;
+		  var newRegionFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
+		  newRegionFlag.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper + ".png'" + newRegionFlagImgOpts + ">";
+		  newRegionFlag.className = "extraRegionFlag";
+		  newRegionFlag.href = "https://www.google.com/search?q=" + regionSuper + ", " + currentFlag.title;
+		  newRegionFlag.target = '_blank';
+		  newRegionFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+		}
+		
 		var newFlag = document.createElement('a');
 		nameBlock.appendChild(newFlag);
 		newFlag.title = post.region;
