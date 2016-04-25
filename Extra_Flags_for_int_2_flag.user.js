@@ -240,13 +240,17 @@ function getRegionSuper(region, country) {
 						 {name:"Sydney", super:"New South Wales"},];
 		
 	} else if (country == "Brazil") {
-		cities = [{name:"Americana", super:"Sao Paulo"},
+		cities = [{name:"Abreu e Lima", super:"Pernambuco"},
+						 {name:"Ananindeua", super:"Para"},
+						 {name:"Americana", super:"Sao Paulo"},
+						 {name:"Anapolis", super:"Goias"},
 						 {name:"Cidade de Sao Paulo", super:"Sao Paulo"},
-			       {name:"Cidade do Rio de Janeiro", super:"Rio de Janeiro"},
+			       			 {name:"Cidade do Rio de Janeiro", super:"Rio de Janeiro"},
 						 {name:"Florianopolis", super:"Santa Catarina"},
 						 {name:"Jacarezinho", super:"Parana"},
 						 {name:"Niteroi", super:"Rio de Janeiro"},
-						 {name:"Votorantim", super:"Sao Paulo"},];
+						 {name:"Porto Alegre", super:"Rio Grande do Sul"},
+						 {name:"Votorantim", super:"Sao Paulo"}];
 		
 		
 	} else if (country == "Canada") {
