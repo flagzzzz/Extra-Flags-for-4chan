@@ -408,6 +408,7 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Ayrshire", super2:"Scotland"},
+						 {name:"Bedfordshire", super2:"England"},
 						 {name:"Birmingham", super:"West Midlands", super2:"England"},
 						 {name:"Black Country", super:"West Midlands", super2:"England"},
 						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
