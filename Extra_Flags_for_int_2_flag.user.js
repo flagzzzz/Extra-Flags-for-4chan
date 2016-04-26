@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.11
+// @version     0.12
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -408,9 +408,11 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Ayrshire", super2:"Scotland"},
+						 {name:"Bedfordshire", super2:"England"},
 						 {name:"Birmingham", super:"West Midlands", super2:"England"},
 						 {name:"Black Country", super:"West Midlands", super2:"England"},
 						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
+						 {name:"Bristol", super2:"England"},
 						 {name:"Cambridgeshire", super2:"England"},
 						 {name:"Ceredigion", super2:"Wales"},
 						 {name:"Chester", super:"Cheshire", super2:"England"},
@@ -421,6 +423,7 @@ function getRegionSuper(region, country) {
 	           				 {name:"Durham City", super:"Durham", super2:"England"},
 						 {name:"East Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Essex", super2:"England"},
+						 {name:"Greater London", super2:"England"},
 						 {name:"Greater Manchester", super2:"England"},
 						 {name:"Hertfordshire", super2:"England"},
 						 {name:"Horningsea", super:"Cambridgeshire", super2:"England"},
