@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.10
+// @version     0.11
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -419,6 +419,7 @@ function getRegionSuper(region, country) {
 			       		 	 {name:"Devon", super2:"England"},
 	           				 {name:"Durham City", super:"Durham", super2:"England"},
 						 {name:"East Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Essex", super2:"England"},
 						 {name:"Greater Manchester", super2:"England"},
 						 {name:"Hertfordshire", super2:"England"},
 						 {name:"Horningsea", super:"Cambridgeshire", super2:"England"},
@@ -435,6 +436,7 @@ function getRegionSuper(region, country) {
 						 {name:"Oxfordshire", super2:"England"},
 						 {name:"South Yorkshire", super2:"England"},
 						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
+						 {name:"Wessex", super2:"England"},
 						 {name:"West Midlands", super2:"England"},
 						 {name:"West Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Wing", super:"Rutland", super2:"England"},
