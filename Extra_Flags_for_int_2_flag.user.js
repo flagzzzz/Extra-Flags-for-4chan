@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.04
+// @version     0.11
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -230,64 +230,112 @@ function getRegionSuper(region, country) {
 	} else if (country == "Australia") {
 		cities = [{name:"Adelaide", super:"South Australia"},
 						 {name:"Alice Springs", super:"Northern Territory"},
+						 {name:"Ballarat", super:"Victoria"},
+						 {name:"Bendigo", super:"Victoria"},
+						 {name:"Botany Bay", super:"New South Wales"},
 						 {name:"Brisbane", super:"Queensland"},
+						 {name:"Broome", super:"Western Australia"},
+						 {name:"Cairns", super:"Queensland"},
+						 {name:"Darwin", super:"Northern Territory"},
+						 {name:"Devonport", super:"Tasmania"},
+						 {name:"Fremantle", super:"Western Australia"},
+						 {name:"Geelong", super:"Victoria"},
+						 {name:"Gold Coast", super:"Queensland"},
 						 {name:"Greater Melbourne", super:"Victoria"},
 						 {name:"Greater Sydney", super:"New South Wales"},
 						 {name:"Hobart", super:"Tasmania"},
+						 {name:"Launceston", super:"Tasmania"},
+						 {name:"Liverpool", super:"New South Wales"},
 						 {name:"Lord Howe Island", super:"New South Wales"},
 						 {name:"Mackay", super:"Victoria"},
 						 {name:"Melbourne", super:"Victoria"},
-						 {name:"Sydney", super:"New South Wales"},];
+						 {name:"Mildura", super:"Victoria"},
+						 {name:"Mornington Peninsula", super:"Victoria"},
+						 {name:"Mount Gambier", super:"South Australia"},
+						 {name:"Newcastle", super:"New South Wales"},
+						 {name:"Parramatta", super:"New South Wales"},
+						 {name:"Perth", super:"Western Australia"},
+						 {name:"Port Hedland", super:"Western Australia"},
+						 {name:"Rockhampton", super:"Queensland"},
+						 {name:"Surf Coast", super:"Victoria"},
+						 {name:"Sydney", super:"New South Wales"},
+						 {name:"Toowoomba", super:"Queensland"},
+						 {name:"Townsville", super:"Queensland"},
+						 {name:"Whitsunday Islands", super:"Queensland"},
+						 {name:"Wollongong", super:"New South Wales"}];
 		
 	} else if (country == "Brazil") {
-		cities = [{name:"Americana", super:"Sao Paulo"},
+		cities = [{name:"Abreu e Lima", super:"Pernambuco"},
+						 {name:"Ananindeua", super:"Para"},
+						 {name:"Americana", super:"Sao Paulo"},
+						 {name:"Anapolis", super:"Goias"},
 						 {name:"Cidade de Sao Paulo", super:"Sao Paulo"},
-			       {name:"Cidade do Rio de Janeiro", super:"Rio de Janeiro"},
+			       			 {name:"Cidade do Rio de Janeiro", super:"Rio de Janeiro"},
 						 {name:"Florianopolis", super:"Santa Catarina"},
 						 {name:"Jacarezinho", super:"Parana"},
 						 {name:"Niteroi", super:"Rio de Janeiro"},
-						 {name:"Votorantim", super:"Sao Paulo"},];
+						 {name:"Porto Alegre", super:"Rio Grande do Sul"},
+						 {name:"Votorantim", super:"Sao Paulo"}];
 		
 		
 	} else if (country == "Canada") {
-		cities = [{name:"Calgary", super:"Alberta"},
+		cities = [{name:"Brampton", super:"Ontario"},
+						 {name:"Burnaby", super:"British Columbia"},
+						 {name:"Calgary", super:"Alberta"},
 						 {name:"Cornwall", super:"Ontario"},
 						 {name:"Edmonton", super:"Alberta"},
+						 {name:"Gatineau", super:"Quebec"},
 						 {name:"Halifax", super:"Nova Scotia"},
 						 {name:"Hamilton", super:"Ontario"},
+						 {name:"Iqaluit", super:"Nunavut"},
 						 {name:"Iroquois", super:"Ontario"},
+						 {name:"Kitchener", super:"Ontario"},
+						 {name:"Laval", super:"Quebec"},
 						 {name:"London", super:"Ontario"},
+						 {name:"Longueuil", super:"Quebec"},
 						 {name:"Markham", super:"Ontario"},
+						 {name:"Mississauga", super:"Ontario"},
 						 {name:"Montreal", super:"Quebec"},
 						 {name:"North Vancouver", super:"British Columbia"},
 						 {name:"Ottawa", super:"Ontario"},
-			       {name:"Petersborough", super:"Ontario"},
+			       			 {name:"Petersborough", super:"Ontario"},
 						 {name:"Quebec City", super:"Quebec"},
 						 {name:"Regina", super:"Saskatchewan"},
+						 {name:"Richmond", super:"British Columbia"},
 						 {name:"Saskatoon", super:"Saskatchewan"},
 						 {name:"Sudbury", super:"Ontario"},
-			       {name:"Toronto", super:"Ontario"},
+						 {name:"Surrey", super:"British Columbia"},
+			       			 {name:"Toronto", super:"Ontario"},
 						 {name:"Vancouver", super:"British Columbia"},
+						 {name:"Vaughan", super:"Ontario"},
 						 {name:"Victoria", super:"British Columbia"},
 						 {name:"Whitehorse", super:"Yukon"},
 						 {name:"Windsor", super:"Ontario"},
 						 {name:"Winnipeg", super:"Manitoba"},
-						 {name:"Yellowknife", super:"Northwest Territories"},];
+						 {name:"Yellowknife", super:"Northwest Territories"}];
 		
 	} else if (country == "Germany") {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
-			       {name:"Dortmund", super:"Nordrhein-Westfalen"},
+						 {name:"Braunscheig", super:"Niedersaschen"},
+			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
+						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
+						 {name:"Lunen", super:"Nordrhein-Westfalen"},
+						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
 		
 	} else if (country == "Italy") {
-	  cities = [{name:"Rome", super:"Lazio"}];
+	  cities = [{name:"Catania", super:"Sicilia"},
+	  					{name:"Rome", super:"Lazio"}];
 		
   }	else if (country == "Netherlands") {
 		cities = [{name:"Alkmaar", super:"Noord-Holland"},
 			       {name:"Almere", super:"Flevoland"},
+						 {name:"Alphen aan de Rijn", super:"Zuid-Holland"},
 						 {name:"Ameland", super:"Friesland"},
+						 {name:"Amersfoort", super:"Utrecht"},
+						 {name:"Apeldoorn", super:"Gelderland"},
 						 {name:"Amsterdam", super:"Noord-Holland"},
 						 {name:"Arnhem", super:"Gelderland"},
 			       {name:"Baarn", super:"Utrecht"},
@@ -295,11 +343,17 @@ function getRegionSuper(region, country) {
 						 {name:"Delft", super:"Zuid-Holland"},
 						 {name:"Den Bosch", super:"Noord-Brabant"},
 						 {name:"Den Haag", super:"Zuid-Holland"},
+						 {name:"Dordrecht",super:"Zuid-Holland"},
+						 {name:"Ede",super:"Gelderland"},
+						 {name:"Enschede",super:"Overijssel"},
+						 {name:"Emmen",super:"Drenthe"},
 						 {name:"Eindhoven", super:"Noord-Brabant"},
 						 {name:"Gorredijk", super:"Friesland"},
+						 {name:"Haarlemmermeer",super:"Noord-Holland"},
 						 {name:"Haarlem", super:"Noord-Holland"},
 						 {name:"Harderwijk", super:"Gelderland"},
 						 {name:"Heerenveen", super:"Friesland"},
+						 {name:"Heerhugowaard", super:"Noord-Holland"},
 						 {name:"Heerlen", super:"Limburg"},
 						 {name:"Kampen", super:"Overijssel"},
 						 {name:"Katwijk", super:"Zuid-Holland"},
@@ -308,6 +362,7 @@ function getRegionSuper(region, country) {
 						 {name:"Maastricht", super:"Limburg"},
 						 {name:"Meppel", super:"Drenthe"},
 						 {name:"Middelburg", super:"Zeeland"},
+						 {name:"Nijmegen",super:"Gelderland"},
 						 {name:"Oegstgeest", super:"Zuid-Holland"},
 						 {name:"Oldeberkoop", super:"Friesland"},
 						 {name:"Ooststellingwerf", super:"Friesland"},
@@ -315,34 +370,79 @@ function getRegionSuper(region, country) {
 						 {name:"Rijswijk", super:"Gelderland"},
 						 {name:"Rotterdam", super:"Zuid-Holland"},
 						 {name:"Schiermonnikoog", super:"Friesland"},
+						 {name:"Stad Groningen",super:"Groningen"},
 						 {name:"Stavoren", super:"Friesland"},
 						 {name:"Terneuzen", super:"Zeeland"},
 						 {name:"Terschelling", super:"Friesland"},
 						 {name:"Texel", super:"Noord-Holland"},
 						 {name:"Tilburg", super:"Noord-Brabant"},
 						 {name:"Velsen", super:"Noord-Holland"},
+						 {name:"Venlo",super:"Limburg"},
 						 {name:"Vlieland", super:"Friesland"},
 						 {name:"Volendam", super:"Noord-Brabant"},
+						 {name:"Westland",super:"Zuid-Holland"},
 						 {name:"Weststellingwerf", super:"Friesland"},
+						 {name:"Zaandam",super:"Noord-Holland"},
 						 {name:"Zoetermeer", super:"Zuid-Holland"},
 						 {name:"Zutphen", super:"Gelderland"},
 						 {name:"Zwolle", super:"Overijssel"},];
 		
 	} else if (country == "Poland") {
-		cities = [{name:"Gniezno", super:"Wielkopolskie"}];
+		cities = [{name:"Bialystok", super:"Podlaskie"},
+			 {name:"Bydgoszcz", super:"Kujawsko-pomorskie"},
+			 {name:"Gdansk", super:"Pomorskie"},
+			 {name:"Gniezno", super:"Wielkopolskie"},
+			 {name:"Gorzow Wielkopolski", super:"Lubuskie"},
+			 {name:"Katowice", super:"Slaskie"},
+			 {name:"Krakow", super:"Malopolskie"},
+			 {name:"Lodz", super:"Lodzkie"},
+			 {name:"Lublin", super:"Lubelskie"},
+			 {name:"Olsztyn", super:"Warminsko-mazurskie"},
+			 {name:"Opole", super:"Opolskie"},
+			 {name:"Rzeszow", super:"Podkarpackie"},
+			 {name:"Szczecin", super:"Zachodniopomorskie"},
+			 {name:"Torun", super:"Kujawsko-pomorskie"},
+			 {name:"Warsaw", super:"Mazowieckie"},
+			 {name:"Wroclaw", super:"Dolnoslaskie"},
+			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
 	} else if (country == "United Kingdom") {
-		cities = [{name:"Birmingham", super:"West Midlands"},
-						 {name:"Chester", super:"Cheshire"},
-			       {name:"City of London", super:"Greater London"},
-	           {name:"Durham City", super:"Durham"},
-						 {name:"East Riding of Yorkshire", super:"Yorkshire"},
-			       {name:"Huntingdonshire", super:"Cambridgeshire"},
-			       {name:"North Riding of Yorkshire", super:"Yorkshire"},
-						 {name:"Norwich", super:"Norfolk"},
-						 {name:"West Riding of Yorkshire", super:"Yorkshire"},
-						 {name:"Wing", super:"Rutland"},
-						 {name:"Wroxton", super:"Oxfordshire"}];
+		cities = [{name:"Ayrshire", super2:"Scotland"},
+						 {name:"Birmingham", super:"West Midlands", super2:"England"},
+						 {name:"Black Country", super:"West Midlands", super2:"England"},
+						 {name:"Bridgend", super:"Glamorgen", super2:"Wales"},
+						 {name:"Cambridgeshire", super2:"England"},
+						 {name:"Ceredigion", super2:"Wales"},
+						 {name:"Chester", super:"Cheshire", super2:"England"},
+			       			 {name:"City of London", super:"Greater London", super2:"England"},
+			       			 {name:"Cornwall", super2:"England"},
+			       		 	 {name:"Isle of Portland", super:"Dorset", super2:"England"},
+			       		 	 {name:"Devon", super2:"England"},
+	           				 {name:"Durham City", super:"Durham", super2:"England"},
+						 {name:"East Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Essex", super2:"England"},
+						 {name:"Greater Manchester", super2:"England"},
+						 {name:"Hertfordshire", super2:"England"},
+						 {name:"Horningsea", super:"Cambridgeshire", super2:"England"},
+						 {name:"Huntingdonshire", super:"Cambridgeshire", super2:"England"},
+			       			 {name:"Isle of Scilly", super:"Cornwall", super2:"England"},
+			       			 {name:"Lancashire", super2:"England"},
+			       			 {name:"Leicestershire", super2:"England"},
+			       			 {name:"Merseyside", super2:"England"},
+			       			 {name:"Newport", super:"Monmouthshire", super2:"Wales"},
+			       			 {name:"Norfolk", super2:"England"},
+			       			 {name:"North Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Norwich", super:"Norfolk", super2:"England"},
+						 {name:"Orkney", super2:"Scotland"},
+						 {name:"Oxfordshire", super2:"England"},
+						 {name:"South Yorkshire", super2:"England"},
+						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
+						 {name:"Wessex", super2:"England"},
+						 {name:"West Midlands", super2:"England"},
+						 {name:"West Riding of Yorkshire", super:"Yorkshire", super2:"England"},
+						 {name:"Wing", super:"Rutland", super2:"England"},
+						 {name:"Worcestershire", super2:"England"},
+						 {name:"Wroxton", super:"Oxfordshire", super2:"England"}];
 		
 	} else { //no cities/super pairing
 		return " ";
@@ -353,7 +453,7 @@ function getRegionSuper(region, country) {
 	}	else {
 		for (var i = 0; i < cities.length; i++) {
 			if (cities[i].name === region) {
-				return cities[i].super;
+				return cities[i];
 				break;
 			}
 	  }
@@ -411,19 +511,45 @@ function onFlagsLoad(response) {
 		var nameBlock = postInfo.getElementsByClassName('nameBlock')[0];
 		var currentFlag = nameBlock.getElementsByClassName('flag')[0];
 		
-		var regionSuper = getRegionSuper(post.region, currentFlag.title);
-
+		//var regionSuper = getRegionSuper(post.region, currentFlag.title);
+		var city = getRegionSuper(post.region, currentFlag.title);
+		if (city === " ") {
+			var regionSuper = " ";
+		} else if (typeof city.super !== 'undefined' && city.super !== null) {
+			var regionSuper = city.super;
+		} else {
+			regionSuper = " ";
+		}
+		
+		if (typeof city.super2 !== 'undefined' && city.super2 !== null) {
+			 var regionSuper2 = city.super2;
+		} else {
+			 var regionSuper2 = " ";
+		}
+		
+		if (regionSuper2 !== " ") {
+			var newRegionFlag2 = document.createElement('a');
+			nameBlock.appendChild(newRegionFlag2);
+			newRegionFlag2.title = regionSuper2;
+			var newRegionFlagImgOpts2 = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag2\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
+			newRegionFlag2.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper2 + ".png'" + newRegionFlagImgOpts2 + ">";
+			newRegionFlag2.className = "extraRegionFlag2";
+			newRegionFlag2.href = "https://www.google.com/search?q=" + regionSuper2 + ", " + currentFlag.title;
+			newRegionFlag2.target = '_blank';
+			newRegionFlag2.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+		}
+		
 		if (regionSuper !== " ") {
-		  var newRegionFlag = document.createElement('b');
+		  var newRegionFlag = document.createElement('a');
 		  nameBlock.appendChild(newRegionFlag);
 		  newRegionFlag.title = regionSuper;
-      var newRegionFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
-      newRegionFlag.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper + ".png'" + newRegionFlagImgOpts + ">";
-      newRegionFlag.className = "extraRegionFlag";
-      newRegionFlag.href = "https://www.google.com/search?q=" + regionSuper + ", " + currentFlag.title;
-      newRegionFlag.target = '_blank';
-      newRegionFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
-    }
+		  var newRegionFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
+		  newRegionFlag.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + regionSuper + ".png'" + newRegionFlagImgOpts + ">";
+		  newRegionFlag.className = "extraRegionFlag";
+		  newRegionFlag.href = "https://www.google.com/search?q=" + regionSuper + ", " + currentFlag.title;
+		  newRegionFlag.target = '_blank';
+		  newRegionFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+		}
 		
 		var newFlag = document.createElement('a');
 		nameBlock.appendChild(newFlag);
