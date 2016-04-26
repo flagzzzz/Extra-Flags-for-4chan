@@ -353,6 +353,7 @@ function getRegionSuper(region, country) {
 						 {name:"Haarlem", super:"Noord-Holland"},
 						 {name:"Harderwijk", super:"Gelderland"},
 						 {name:"Heerenveen", super:"Friesland"},
+						 {name:"Heerhugowaard", super:"Noord-Holland"},
 						 {name:"Heerlen", super:"Limburg"},
 						 {name:"Kampen", super:"Overijssel"},
 						 {name:"Katwijk", super:"Zuid-Holland"},
@@ -527,7 +528,7 @@ function onFlagsLoad(response) {
 		}
 		
 		if (regionSuper2 !== " ") {
-			var newRegionFlag2 = document.createElement('c');
+			var newRegionFlag2 = document.createElement('a');
 			nameBlock.appendChild(newRegionFlag2);
 			newRegionFlag2.title = regionSuper2;
 			var newRegionFlagImgOpts2 = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag2\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
@@ -539,7 +540,7 @@ function onFlagsLoad(response) {
 		}
 		
 		if (regionSuper !== " ") {
-		  var newRegionFlag = document.createElement('b');
+		  var newRegionFlag = document.createElement('a');
 		  nameBlock.appendChild(newRegionFlag);
 		  newRegionFlag.title = regionSuper;
 		  var newRegionFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr + '\').getElementsByClassName(\'extraRegionFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' + flegsBaseUrl + 'empty.png\';}})();"';
