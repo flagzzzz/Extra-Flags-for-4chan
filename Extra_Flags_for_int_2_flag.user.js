@@ -275,6 +275,7 @@ function getRegionSuper(region, country) {
 						 {name:"Jacarezinho", super:"Parana"},
 						 {name:"Niteroi", super:"Rio de Janeiro"},
 						 {name:"Porto Alegre", super:"Rio Grande do Sul"},
+						 {name:"Santos", super:"Sao Paulo"},
 						 {name:"Votorantim", super:"Sao Paulo"}];
 		
 		
@@ -316,7 +317,7 @@ function getRegionSuper(region, country) {
 		
 	} else if (country == "Germany") {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
-						 {name:"Braunscheig", super:"Niedersaschen"},
+						 {name:"Braunschweig", super:"Niedersaschen"},
 			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
@@ -437,12 +438,14 @@ function getRegionSuper(region, country) {
 			       			 {name:"Norfolk", super2:"England"},
 			       			 {name:"North Riding of Yorkshire", super:"Yorkshire", super2:"England"},
 						 {name:"Norwich", super:"Norfolk", super2:"England"},
+						 {name:"Nottinghamshire", super2:"England"},
 						 {name:"Orkney", super2:"Scotland"},
 						 {name:"Oxfordshire", super2:"England"},
 						 {name:"Powys", super2:"Wales"},
 						 {name:"Somerset", super2:"England"},
 						 {name:"South Yorkshire", super2:"England"},
 						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
+						 {name:"Surrey", super2:"England"},
 						 {name:"Wessex", super2:"England"},
 						 {name:"West Midlands", super2:"England"},
 						 {name:"West Riding of Yorkshire", super:"Yorkshire", super2:"England"},
