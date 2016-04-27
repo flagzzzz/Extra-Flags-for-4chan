@@ -298,7 +298,7 @@ function getRegionSuper(region, country) {
 						 {name:"Montreal", super:"Quebec"},
 						 {name:"North Vancouver", super:"British Columbia"},
 						 {name:"Ottawa", super:"Ontario"},
-			       			 {name:"Petersborough", super:"Ontario"},
+			       			 {name:"Peterborough", super:"Ontario"},
 						 {name:"Quebec City", super:"Quebec"},
 						 {name:"Regina", super:"Saskatchewan"},
 						 {name:"Richmond", super:"British Columbia"},
@@ -321,6 +321,7 @@ function getRegionSuper(region, country) {
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
+						 {name:"Landkreis Berchtesgadener Land", super:"Bayern"},
 						 {name:"Lunen", super:"Nordrhein-Westfalen"},
 						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
