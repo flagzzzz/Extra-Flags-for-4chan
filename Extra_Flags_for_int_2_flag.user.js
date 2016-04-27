@@ -438,6 +438,8 @@ function getRegionSuper(region, country) {
 						 {name:"Norwich", super:"Norfolk", super2:"England"},
 						 {name:"Orkney", super2:"Scotland"},
 						 {name:"Oxfordshire", super2:"England"},
+						 {name:"Powys", super2:"Wales"},
+						 {name:"Somerset", super2:"England"},
 						 {name:"South Yorkshire", super2:"England"},
 						 {name:"St Annes on the Sea", super:"Lancashire", super2:"England"},
 						 {name:"Wessex", super2:"England"},
