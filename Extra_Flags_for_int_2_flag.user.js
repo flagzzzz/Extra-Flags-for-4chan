@@ -26,7 +26,7 @@ var allPostsOnPage = new Array();
 var postNrs = new Array();
 var postRemoveCounter = 60;
 var requestRetryInterval = 5000;
-var flegsBaseUrl = 'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
+var flegsBaseUrl = 'https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/update/flegs'; //'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
 var navigatorIsWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1;
 var backendBaseUrl = 'https://whatisthisimnotgoodwithcomputers.com/';
 
@@ -408,6 +408,8 @@ function getRegionSuper(region, country) {
 			 {name:"Wroclaw", super:"Dolnoslaskie"},
 			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
+	} else if (country == "Switzerland") {
+		cities = [{name:"Biel", super:"Bern"}];
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Ayrshire", super2:"Scotland"},
 						 {name:"Bedfordshire", super2:"England"},
