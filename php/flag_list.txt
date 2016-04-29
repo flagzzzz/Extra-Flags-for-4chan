@@ -2899,6 +2899,7 @@ Appenzell Innerrhoden
 Basel-Landschaft
 Basel-Stadt
 Bern
+Biel
 Fribourg
 Geneva
 Glarus
