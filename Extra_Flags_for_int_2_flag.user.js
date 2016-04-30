@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.15
+// @version     0.16
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -319,11 +319,14 @@ function getRegionSuper(region, country) {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
 						 {name:"Braunschweig", super:"Niedersaschen"},
 			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
+			       			 {name:"Enzkreis", super:"Baden-Wurttemburg"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
 						 {name:"Landkreis Berchtesgadener Land", super:"Bayern"},
 						 {name:"Lunen", super:"Nordrhein-Westfalen"},
+						 {name:"Ostalbkreis", super:"Baden-Wurttemburg"},
+						 {name:"Pforzheim", super:"Baden-Wurttemburg"},
 						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
 						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
 		
