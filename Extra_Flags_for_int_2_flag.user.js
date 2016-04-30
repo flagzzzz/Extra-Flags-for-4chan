@@ -328,7 +328,8 @@ function getRegionSuper(region, country) {
 						 {name:"Ostalbkreis", super:"Baden-Wurttemburg"},
 						 {name:"Pforzheim", super:"Baden-Wurttemburg"},
 						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
-						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
+						 {name:"Schwalm-Eder-Kreis", super:"Hessen"},
+						 {name:"Unna", super:"Nordrhein-Westfalen"}];
 		
 	} else if (country == "Italy") {
 	  cities = [{name:"Catania", super:"Sicilia"},
@@ -409,8 +410,11 @@ function getRegionSuper(region, country) {
 						 {name:"De Ronde Venen", super:"Utrecht"},
 						 {name:"De Wolden", super:"Drenthe"},
 						 {name:"Delft", super:"Zuid-Holland"},
+						 {name:"Delfzijl", super:"Groningen"},
 						 {name:"Den Bosch", super:"Noord-Brabant"},
 						 {name:"Den Haag", super:"Zuid-Holland"},
+						 {name:"Den Helder", super:"Noord-Holland"},
+						 {name:"Deurne", super:"Noord-Brabant"},
 						 {name:"Dordrecht",super:"Zuid-Holland"},
 						 {name:"Ede",super:"Gelderland"},
 						 {name:"Enschede",super:"Overijssel"},
