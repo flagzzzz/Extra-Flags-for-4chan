@@ -432,7 +432,7 @@ function getRegionSuper(region, country) {
 			 {name:"Zielona Gora", super:"Lubuskie"}];
 		
 	} else if (country == "Switzerland") {
-		cities = [{name:"Biel", super:"Bern"}];
+		cities = [{name:"Gemeinde Biel", super:"Bezirk Biel", super2:"Bern"}];
 	} else if (country == "United Kingdom") {
 		cities = [{name:"Aberdeen", super2:"Scotland"},
 						 {name:"Aberdeenshire", super2:"Scotland"},
