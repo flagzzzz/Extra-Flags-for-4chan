@@ -26,7 +26,7 @@ var allPostsOnPage = new Array();
 var postNrs = new Array();
 var postRemoveCounter = 60;
 var requestRetryInterval = 5000;
-var flegsBaseUrl = 'https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/master/flegs/' //'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
+var flegsBaseUrl = 'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
 var navigatorIsWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1;
 var backendBaseUrl = 'https://whatisthisimnotgoodwithcomputers.com/';
 
@@ -185,7 +185,6 @@ function getRegionSuper(region, country) {
 							{name:"New Orleans", super:"Louisiana"},
 							{name:"New York City", super:"New York"},
 							{name:"Newark", super:"New Jersey"},
-							{name:"Norfolk", super:"Virginia"},
 							{name:"Oklahoma City", super:"Oklahoma"},
 							{name:"Olathe", super:"Kansas"},
 							{name:"Omaha", super:"Nebraska"},
