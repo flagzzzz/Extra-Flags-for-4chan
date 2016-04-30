@@ -26,7 +26,7 @@ var allPostsOnPage = new Array();
 var postNrs = new Array();
 var postRemoveCounter = 60;
 var requestRetryInterval = 5000;
-var flegsBaseUrl = 'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
+var flegsBaseUrl = 'https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/master/flegs/' //'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flegs/';
 var navigatorIsWebkit = navigator.userAgent.toLowerCase().indexOf('webkit') > -1;
 var backendBaseUrl = 'https://whatisthisimnotgoodwithcomputers.com/';
 
@@ -185,6 +185,7 @@ function getRegionSuper(region, country) {
 							{name:"New Orleans", super:"Louisiana"},
 							{name:"New York City", super:"New York"},
 							{name:"Newark", super:"New Jersey"},
+							{name:"Norfolk", super:"Virginia"},
 							{name:"Oklahoma City", super:"Oklahoma"},
 							{name:"Olathe", super:"Kansas"},
 							{name:"Omaha", super:"Nebraska"},
@@ -415,6 +416,12 @@ function getRegionSuper(region, country) {
 						 {name:"Den Haag", super:"Zuid-Holland"},
 						 {name:"Den Helder", super:"Noord-Holland"},
 						 {name:"Deurne", super:"Noord-Brabant"},
+						 {name:"Deventer", super:"Overijssel"},
+						 {name:"Dieman", super:"Noord-Holland"},
+						 {name:"Dinkelland", super:"Overijssel"},
+						 {name:"Doesburg", super:"Gelderland"},
+						 {name:"Doetinchem", super:"Gelderland"},
+						 {name:"Dongen", super:"Noord-Brabant"},
 						 {name:"Dordrecht",super:"Zuid-Holland"},
 						 {name:"Ede",super:"Gelderland"},
 						 {name:"Enschede",super:"Overijssel"},
