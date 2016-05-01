@@ -3347,6 +3347,7 @@ New Mexico
 New Orleans
 New York City
 New York
+Norfolk
 North Carolina
 North Dakota
 Ohio
@@ -3402,6 +3403,7 @@ Virginia
 Washington
 West Virginia
 Wichita
+Williamsburg
 Wilmington
 Winston-Salem
 Wisconsin
