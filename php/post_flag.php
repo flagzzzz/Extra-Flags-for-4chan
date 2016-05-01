@@ -27,7 +27,7 @@ if (!strlen($post_nr)){
 }
 
 //list for flags
-$flaglist = file('https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/php/flag_list.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$flaglist = file('https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/patch-1/php/flag_list.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 echo "pre";
 
