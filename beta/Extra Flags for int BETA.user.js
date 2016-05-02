@@ -56,7 +56,7 @@ var setup = {
     id: "ExtraFlags-setup",
     html: function () {
         return '<div>Extra Flags for /int/</div><ul id="' + shortId + 'ul">Country: <li><select id="' + shortId + 'countrySelect">' +
-            '<option value=""></option></select></li></ul><div><button name="save">Save settings</button></div></div>';
+            '<option value=""></option></select></li></ul><div><button name="forward">Go into folder</button></div><div><button name="back">Back a step</button></div><br/><div><button name="save">Save settings</button></div></div>';
     },
     fillHtml: function () {
         var path = flegsBaseUrl + "/";
@@ -86,10 +86,6 @@ var setup = {
                     opt.innerHTML = countriesAvailable[countriesCounter];
                     countrySelect.appendChild(opt);
                 }
-            },
-            onerror: function () {
-                //save
-                //setup.save(regionVariable, region);
             }
         });
     },
@@ -115,26 +111,40 @@ var setup = {
         setup_el.innerHTML = setup.html();
         setup.fillHtml();
         document.body.appendChild(setup_el);
-        /* save listener */
-        setup.q('save').addEventListener('click', function () {
+        /* button listeners */
+        setup.q('back').addEventListener('click', function() {
+            if (regions.length > 0) {
+                regions.pop();
+                //setup_el.parentNode.removeChild(setup_el);
+                setup.show();
+            }
+        }, false);
+        
+        setup.q('forward').addEventListener('click', function () {
             this.disabled = true;
             this.innerHTML = 'Saving...';
-            //region = setup.q('region').value.trim();
-            //setup.save(regionVariable, region);
             var e = document.getElementById(shortId + "countrySelect");
             var temp = e.options[e.selectedIndex].value;
-            //alert(temp);
             if (regions.length == 0) {
                 regions.push(temp);
-                alert(regions);
-                setup_el.parentNode.removeChild(setup_el);
                 setup.show();
             } else if (regions.length > 0 && regions[regions.length - 1] !== temp) {
                 regions.push(temp);
-                alert(regions);
-                setup_el.parentNode.removeChild(setup_el);
                 setup.show();
             }
+        }, false);
+        
+        setup.q('save').addEventListener('click', function() {
+            var e = document.getElementById(shortId + "countrySelect");
+            var temp = e.options[e.selectedIndex].value;
+            if (temp != "") {
+                regions.push(temp);
+            }
+            alert(regions);
+            this.disabled = true;
+            this.innerHTML = 'Saving...';
+            setup_el.parentNode.removeChild(setup_el);
+            setup.save(regionVariable, regions);
         }, false);
     },
     save: function (k, v) {
