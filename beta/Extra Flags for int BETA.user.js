@@ -121,17 +121,22 @@ var setup = {
         }, false);
         
         setup.q('forward').addEventListener('click', function () {
-            this.disabled = true;
-            this.innerHTML = 'Saving...';
             var e = document.getElementById(shortId + "countrySelect");
             var temp = e.options[e.selectedIndex].value;
-            if (regions.length == 0) {
-                regions.push(temp);
-                setup.show();
-            } else if (regions.length > 0 && regions[regions.length - 1] !== temp) {
-                regions.push(temp);
-                setup.show();
+            
+            if (temp != "") {
+                this.disabled = true;
+                this.innerHTML = 'Saving...';
+
+                if (regions.length == 0) {
+                    regions.push(temp);
+                    setup.show();
+                } else if (regions.length > 0 && regions[regions.length - 1] !== temp) {
+                    regions.push(temp);
+                    setup.show();
+                }
             }
+            
         }, false);
         
         setup.q('save').addEventListener('click', function() {
