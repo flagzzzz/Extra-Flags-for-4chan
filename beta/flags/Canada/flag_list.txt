@@ -1,1 +1,74 @@
-
+Alberta
+Calgary
+Edmonton
+Abbotsford
+British Columbia
+Burnaby
+Coquitlam
+Kelowna
+Langley
+North Vancouver
+Richmond
+Saanich
+Surrey
+Vancouver
+Victoria
+Manitoba
+Winnipeg
+New Brunswick
+Newfoundland and Labrador
+St Johns
+Northwest Territories
+Yellowknife
+Cape Breton
+Halifax
+Nova Scotia
+Cape Breton
+Halifax
+Nova Scotia
+Ajax
+Barrie
+Brampton
+Burlington
+Cambridge
+Chatham-Kent
+Cornwall
+Delta
+Guelph
+Hamilton
+Kingston
+Kitchener
+London
+Markham
+Mississauga
+Oakville
+Ontario
+Oshawa
+Ottawa
+Peterborough
+Richmond Hill
+St Catherines
+Sudbury
+Thunder Bay
+Toronto
+Vaughan
+Waterloo
+Whitby
+Windsor
+Prince Edward Island
+Gatineau
+Laval
+Levis
+Longueuil
+Montreal
+Quebec City
+Quebec
+Saguenay
+Sherbrooke
+Terrebonne
+Trois-Rivieres
+Regina
+Saskatchewan
+Saskatoon
+Whitehorse
+Yukon
