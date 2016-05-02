@@ -149,7 +149,7 @@ var setup = {
             if (regions.length == 0) {
                 regions.push("NONE"); //will get deleted anyway
             }
-            alert(regions);
+            alert("Regions array contents: [" + regions + "]");
             this.disabled = true;
             this.innerHTML = 'Saving...';
             setup_el.parentNode.removeChild(setup_el);
@@ -208,23 +208,25 @@ function onFlagsLoad(response) {
         
         
         //newFlag.title = post.region;
-        var path = post.region[0];
-        for (var i = 1; i < post.region.length; i++) { //start on the second element
-            path += "/" + post.region[i];
-            nameBlock.appendChild(newFlag);
-        
-            var newFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr +
-                '\').getElementsByClassName(\'extraFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' +
-                flegsBaseUrl + 'empty.png\';}})();"';
+        if (post.region.length > 0) {
+            var path = post.region[0];
+            for (var i = 1; i < post.region.length; i++) { //start on the second element
+                path += "/" + post.region[i];
+                nameBlock.appendChild(newFlag);
 
-            newFlag.innerHTML = "<img src='" + flegsBaseUrl + path + ".png'" + newFlagImgOpts + ">";
-            newFlag.className = "extraFlag";
-            newFlag.href = "https://www.google.com/search?q=" + post.region[i] + ", " + currentFlag.title;
-            newFlag.target = '_blank';
-            //padding format: TOP x RIGHT_OF x BOTTOM x LEFT_OF
-            newFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
-            
-            console.log("resolved " + post.region[i]);
+                var newFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr +
+                    '\').getElementsByClassName(\'extraFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' +
+                    flegsBaseUrl + 'empty.png\';}})();"';
+
+                newFlag.innerHTML = "<img src='" + flegsBaseUrl + path + ".png'" + newFlagImgOpts + ">";
+                newFlag.className = "extraFlag";
+                newFlag.href = "https://www.google.com/search?q=" + post.region[i] + ", " + currentFlag.title;
+                newFlag.target = '_blank';
+                //padding format: TOP x RIGHT_OF x BOTTOM x LEFT_OF
+                newFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+
+                console.log("resolved " + post.region[i]);
+            }
         }
 
         //postNrs are resolved and should be removed from this variable
