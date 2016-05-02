@@ -44,7 +44,7 @@ var allPostsOnPage = [];
 var postNrs = [];
 var postRemoveCounter = 60;
 var requestRetryInterval = 5000;
-var flegsBaseUrl = 'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/beta/flags/';
+var flegsBaseUrl = 'https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/patch-1/beta/flags/'; //'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/beta/flags/';
 var flagListFile = 'flag_list.txt';
 var backendBaseUrl = 'https://whatisthisimnotgoodwithcomputers.com/';
 var shortId = 'witingwc.ef.';
@@ -140,6 +140,10 @@ var setup = {
             if (temp != "") {
                 regions.push(temp);
             }
+            
+            if (regions.length == 0) {
+                regions.push("NONE"); //will get deleted anyway
+            }
             alert(regions);
             this.disabled = true;
             this.innerHTML = 'Saving...';
@@ -196,21 +200,27 @@ function onFlagsLoad(response) {
             nameBlock = postInfo.getElementsByClassName('nameBlock')[0],
             currentFlag = nameBlock.getElementsByClassName('flag')[0],
             newFlag = document.createElement('a');
+        
+        
+        //newFlag.title = post.region;
+        var path = post.region[0];
+        for (var i = 1; i < post.region.length; i++) { //start on the second element
+            path += "/" + post.region[i];
+            nameBlock.appendChild(newFlag);
+        
+            var newFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr +
+                '\').getElementsByClassName(\'extraFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' +
+                flegsBaseUrl + 'empty.png\';}})();"';
 
-        nameBlock.appendChild(newFlag);
-        newFlag.title = post.region;
-        var newFlagImgOpts = 'onerror="(function () {var extraFlagsImgEl = document.getElementById(\'pc' + post.post_nr +
-            '\').getElementsByClassName(\'extraFlag\')[0].firstElementChild; if (!/\\/empty\\.png$/.test(extraFlagsImgEl.src)) {extraFlagsImgEl.src = \'' +
-            flegsBaseUrl + 'empty.png\';}})();"';
-
-        newFlag.innerHTML = "<img src='" + flegsBaseUrl + currentFlag.title + "/" + post.region + ".png'" + newFlagImgOpts + ">";
-        newFlag.className = "extraFlag";
-        newFlag.href = "https://www.google.com/search?q=" + post.region + ", " + currentFlag.title;
-        newFlag.target = '_blank';
-        //padding format: TOP x RIGHT_OF x BOTTOM x LEFT_OF
-        newFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
-
-        console.log("resolved " + post.region);
+            newFlag.innerHTML = "<img src='" + flegsBaseUrl + path + ".png'" + newFlagImgOpts + ">";
+            newFlag.className = "extraFlag";
+            newFlag.href = "https://www.google.com/search?q=" + post.region[i] + ", " + currentFlag.title;
+            newFlag.target = '_blank';
+            //padding format: TOP x RIGHT_OF x BOTTOM x LEFT_OF
+            newFlag.style = "padding: 0px 0px 0px 5px; vertical-align:;display: inline-block; width: 16px; height: 11px; position: relative; top: 1px;";
+            
+            console.log("resolved " + post.region[i]);
+        }
 
         //postNrs are resolved and should be removed from this variable
         var index = postNrs.indexOf(post.post_nr);
