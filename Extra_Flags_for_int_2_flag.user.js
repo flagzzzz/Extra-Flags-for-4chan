@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.15
+// @version     0.16
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -319,13 +319,18 @@ function getRegionSuper(region, country) {
 		cities = [{name:"Aachen", super:"Nordrhein-Westfalen"},
 						 {name:"Braunschweig", super:"Niedersaschen"},
 			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
+			       			 {name:"Enzkreis", super:"Baden-Wurttemberg"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
 						 {name:"Landkreis Berchtesgadener Land", super:"Bayern"},
+						 {name:"Landkreis Unterallgau", super:"Bayern"},
 						 {name:"Lunen", super:"Nordrhein-Westfalen"},
+						 {name:"Ostalbkreis", super:"Baden-Wurttemberg"},
+						 {name:"Pforzheim", super:"Baden-Wurttemberg"},
 						 {name:"Recklinghausen", super:"Nordrhein-Westfalen"},
-						 {name:"Schwalm-Eder-Kreis", super:"Hessen"}];
+						 {name:"Schwalm-Eder-Kreis", super:"Hessen"},
+						 {name:"Unna", super:"Nordrhein-Westfalen"}];
 		
 	} else if (country == "Italy") {
 	  cities = [{name:"Catania", super:"Sicilia"},
@@ -406,10 +411,20 @@ function getRegionSuper(region, country) {
 						 {name:"De Ronde Venen", super:"Utrecht"},
 						 {name:"De Wolden", super:"Drenthe"},
 						 {name:"Delft", super:"Zuid-Holland"},
+						 {name:"Delfzijl", super:"Groningen"},
 						 {name:"Den Bosch", super:"Noord-Brabant"},
 						 {name:"Den Haag", super:"Zuid-Holland"},
+						 {name:"Den Helder", super:"Noord-Holland"},
+						 {name:"Deurne", super:"Noord-Brabant"},
+						 {name:"Deventer", super:"Overijssel"},
+						 {name:"Dieman", super:"Noord-Holland"},
+						 {name:"Dinkelland", super:"Overijssel"},
+						 {name:"Doesburg", super:"Gelderland"},
+						 {name:"Doetinchem", super:"Gelderland"},
+						 {name:"Dongen", super:"Noord-Brabant"},
 						 {name:"Dordrecht",super:"Zuid-Holland"},
 						 {name:"Ede",super:"Gelderland"},
+						 {name:"Eemnes", super:"Utrecht"},
 						 {name:"Enschede",super:"Overijssel"},
 						 {name:"Emmen",super:"Drenthe"},
 						 {name:"Eindhoven", super:"Noord-Brabant"},
