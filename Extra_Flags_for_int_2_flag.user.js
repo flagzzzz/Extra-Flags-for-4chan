@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.16
+// @version     0.17
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -284,6 +284,7 @@ function getRegionSuper(region, country) {
 						 {name:"Burnaby", super:"British Columbia"},
 						 {name:"Calgary", super:"Alberta"},
 						 {name:"Cornwall", super:"Ontario"},
+						 {name:"Delta", super:"British Columbia"},
 						 {name:"Edmonton", super:"Alberta"},
 						 {name:"Gatineau", super:"Quebec"},
 						 {name:"Halifax", super:"Nova Scotia"},
@@ -307,6 +308,7 @@ function getRegionSuper(region, country) {
 						 {name:"Sudbury", super:"Ontario"},
 						 {name:"Surrey", super:"British Columbia"},
 			       			 {name:"Toronto", super:"Ontario"},
+			       			 {name:"Trois-Riviers", super:"Quebec"},
 						 {name:"Vancouver", super:"British Columbia"},
 						 {name:"Vaughan", super:"Ontario"},
 						 {name:"Victoria", super:"British Columbia"},
