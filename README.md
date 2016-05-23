@@ -1,5 +1,7 @@
-Extra Flags for 4chan.
+Extra Flags for 4chan (with even more displayed flags).
 ==========
+![How it should look when using the script](Capture.JPG)
+
 Originally made for /int/, but we support /sp/ and /pol/ now as well.
 Made by /ref/ and flags contributed by various /ref/ and /int/ posters.
 Your flag not here? Create an issue on the right.
@@ -12,8 +14,6 @@ Because PK is working to implement city and region flags in the official script,
 ==
 
 For the official version of the script, visit https://flaghunters.github.io/Extra-Flags-for-4chan/
-
-![Example of how the script should look when using it](Capture.JPG)
 
 HOW TO INSTALL (Desktop - Chrome/Firefox/Opera)
 ==========
