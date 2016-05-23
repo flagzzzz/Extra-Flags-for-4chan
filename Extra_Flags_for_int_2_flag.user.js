@@ -610,6 +610,7 @@ function getRegionSuper(region, country) {
 						 {name:"Stirling", super2:"Scotland"},
 						 {name:"Suffolk", super2:"England"},
 						 {name:"Surrey", super2:"England"},
+						 {name:"Surrey Heath", super:"Surrey", super2:"England"},
 						 {name:"Swansea", super2:"Wales"},
 						 {name:"Torfaen", super2:"Wales"},
 						 {name:"Tyne and Wear", super2:"England"},
