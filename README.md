@@ -13,6 +13,8 @@ Because PK is working to implement city and region flags in the official script,
 
 For the official version of the script, visit https://flaghunters.github.io/Extra-Flags-for-4chan/
 
+![Example of how the script should look when using it](Capture.JPG)
+
 HOW TO INSTALL (Desktop - Chrome/Firefox/Opera)
 ==========
 If you are using Firefox, download GreaseMonkey
