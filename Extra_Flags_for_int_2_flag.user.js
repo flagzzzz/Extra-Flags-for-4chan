@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.16
+// @version     0.17
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -284,12 +284,14 @@ function getRegionSuper(region, country) {
 						 {name:"Burnaby", super:"British Columbia"},
 						 {name:"Calgary", super:"Alberta"},
 						 {name:"Cornwall", super:"Ontario"},
+						 {name:"Delta", super:"British Columbia"},
 						 {name:"Edmonton", super:"Alberta"},
 						 {name:"Gatineau", super:"Quebec"},
 						 {name:"Halifax", super:"Nova Scotia"},
 						 {name:"Hamilton", super:"Ontario"},
 						 {name:"Iqaluit", super:"Nunavut"},
 						 {name:"Iroquois", super:"Ontario"},
+						 {name:"Kingston", super:"Ontario"},
 						 {name:"Kitchener", super:"Ontario"},
 						 {name:"Laval", super:"Quebec"},
 						 {name:"London", super:"Ontario"},
@@ -307,6 +309,7 @@ function getRegionSuper(region, country) {
 						 {name:"Sudbury", super:"Ontario"},
 						 {name:"Surrey", super:"British Columbia"},
 			       			 {name:"Toronto", super:"Ontario"},
+			       			 {name:"Trois-Riviers", super:"Quebec"},
 						 {name:"Vancouver", super:"British Columbia"},
 						 {name:"Vaughan", super:"Ontario"},
 						 {name:"Victoria", super:"British Columbia"},
@@ -320,8 +323,10 @@ function getRegionSuper(region, country) {
 						 {name:"Braunschweig", super:"Niedersaschen"},
 			       			 {name:"Dortmund", super:"Nordrhein-Westfalen"},
 			       			 {name:"Enzkreis", super:"Baden-Wurttemberg"},
+			       			 {name:"Karlsruhe", super:"Baden-Wurttemberg"},
 						 {name:"Kiel", super:"Schleswig-Holstein"},
 						 {name:"Kreis Minden-Lubbecke", super:"Nordrhein-Westfalen"},
+						 {name:"Kreis Steinfurt", super:"Nordrhein-Westfalen"},
 						 {name:"Kreis Unna", super:"Nordrhein-Westfalen"},
 						 {name:"Landkreis Berchtesgadener Land", super:"Bayern"},
 						 {name:"Landkreis Unterallgau", super:"Bayern"},
@@ -565,6 +570,7 @@ function getRegionSuper(region, country) {
 			       			 {name:"Lincolnshire", super2:"England"},
 			       			 {name:"Liverpool", super:"Merseyside", super2:"England"},
 			       			 {name:"Londonderry", super2:"Northern Ireland"},
+			       			 {name:"Lundy Island", super:"Devon", super2:"England"},
 			       			 {name:"Merseyside", super2:"England"},
 			       			 {name:"Merthyr Tydfil", super2:"Wales"},
 			       			 {name:"Midlothian", super2:"Scotland"},
@@ -604,6 +610,7 @@ function getRegionSuper(region, country) {
 						 {name:"Stirling", super2:"Scotland"},
 						 {name:"Suffolk", super2:"England"},
 						 {name:"Surrey", super2:"England"},
+						 {name:"Surrey Heath", super:"Surrey", super2:"England"},
 						 {name:"Swansea", super2:"Wales"},
 						 {name:"Torfaen", super2:"Wales"},
 						 {name:"Tyne and Wear", super2:"England"},
