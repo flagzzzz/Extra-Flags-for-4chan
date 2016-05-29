@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.17
+// @version     0.18
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -434,6 +434,7 @@ function getRegionSuper(region, country) {
 						 {name:"Emmen",super:"Drenthe"},
 						 {name:"Eindhoven", super:"Noord-Brabant"},
 						 {name:"Gorredijk", super:"Friesland"},
+						 {name:"Haaksbergen", super:"Overijssel"},
 						 {name:"Haarlemmermeer",super:"Noord-Holland"},
 						 {name:"Haarlem", super:"Noord-Holland"},
 						 {name:"Harderwijk", super:"Gelderland"},
@@ -441,6 +442,7 @@ function getRegionSuper(region, country) {
 						 {name:"Heerhugowaard", super:"Noord-Holland"},
 						 {name:"Heerlen", super:"Limburg"},
 						 {name:"Het Bildt", super:"Friesland"},
+						 {name:"Hollands Kroon", super:"Noord-Holland"},
 						 {name:"Kaag en Braassem", super:"Zuid-Holland"},
 						 {name:"Kampen", super:"Overijssel"},
 						 {name:"Katwijk", super:"Zuid-Holland"},
@@ -448,6 +450,7 @@ function getRegionSuper(region, country) {
 						 {name:"Leiden", super:"Zuid-Holland"},
 						 {name:"Leiderdorp", super:"Zuid-Holland"},
 						 {name:"Lisse", super:"Zuid-Holland"},
+						 {name:"Littenseradeel", super:"Friesland"},
 						 {name:"Maastricht", super:"Limburg"},
 						 {name:"Meppel", super:"Drenthe"},
 						 {name:"Middelburg", super:"Zeeland"},
@@ -461,6 +464,7 @@ function getRegionSuper(region, country) {
 						 {name:"Schiermonnikoog", super:"Friesland"},
 						 {name:"Stad Groningen",super:"Groningen"},
 						 {name:"Stavoren", super:"Friesland"},
+						 {name:"Súdwest Fryslân", super:"Friesland"},
 						 {name:"Terneuzen", super:"Zeeland"},
 						 {name:"Terschelling", super:"Friesland"},
 						 {name:"Texel", super:"Noord-Holland"},
@@ -683,6 +687,9 @@ function onFlagsLoad(response) {
 		setTimeout(resolveRefFlags, requestRetryInterval);
 		return;
 	}
+
+	//change script
+	//alert("Hello friend! The official version of the extra flags for 4chan script updated to include support for displaying regional and city flags simultaneously. It also added selecting flags from dropdown menus to allow for easier flag selection. This update make this script obsolete and as such is no longer supported. Please visit https://flaghunters.github.io/Extra-Flags-for-4chan/ to download the newly updated script if you need to and be sure to disable this one, otherwise you will see this message box every time you load a page. Thanks for using this script in the meantime!")
 	
 	//parse returned data
 	//host22 sends crap about analytics which needs to be cut off
