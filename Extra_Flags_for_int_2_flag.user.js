@@ -8,7 +8,7 @@
 // @exclude     http*://boards.4chan.org/int/catalog
 // @exclude     http*://boards.4chan.org/sp/catalog
 // @exclude     http*://boards.4chan.org/pol/catalog
-// @version     0.18
+// @version     0.20
 // @grant       GM_xmlhttpRequest
 // @grant       GM_registerMenuCommand
 // @grant       GM_getValue
@@ -689,7 +689,7 @@ function onFlagsLoad(response) {
 	}
 
 	//change script
-	//alert("Hello friend! The official version of the extra flags for 4chan script updated to include support for displaying regional and city flags simultaneously. It also added selecting flags from dropdown menus to allow for easier flag selection. This update make this script obsolete and as such is no longer supported. Please visit https://flaghunters.github.io/Extra-Flags-for-4chan/ to download the newly updated script if you need to and be sure to disable this one, otherwise you will see this message box every time you load a page. Thanks for using this script in the meantime!")
+	alert("Hello friend! The official version of the extra flags for 4chan script updated to include support for displaying regional and city flags simultaneously. It also added selecting flags from dropdown menus to allow for easier flag selection. This update make this script obsolete and as such is no longer supported. Please visit https://flaghunters.github.io/Extra-Flags-for-4chan/ to download the newly updated script if you need to and be sure to disable this one, otherwise you will see this message box every time you load a page. Thanks for using this script in the meantime!")
 	
 	//parse returned data
 	//host22 sends crap about analytics which needs to be cut off
