@@ -1,0 +1,191 @@
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Antarctica
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bolivia
+Bonaire, Sint Eustatius and Saba
+Bosnia and Herzegovina
+Botswana
+Brazil
+British Indian Ocean Territory
+Bulgaria
+Burkina Faso
+Cambodia
+Canada
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Costa Rica
+Côte d'Ivoire
+Croatia
+Cuba
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Faroe Islands
+Federated States of Micronesia
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+Gabon
+Georgia
+Germany
+Ghana
+Greece
+Greenland
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea-Bissau
+Haiti
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kyrgyzstan
+Latvia
+Lebanon
+Liberia
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Madagascar
+Malaysia
+Mali
+Malta
+Marshall Islands
+Mauritius
+Mexico
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nepal
+Netherlands
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+North Korea
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Puerto Rico
+Republic of the Congo
+Réunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena, Ascension, and Tristan da Cunha
+Saint Kitts and Nevis
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+San Marino
+Sao Tome and Principe
+Senegal
+Serbia
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Korea
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+The Democratic Republic of the Congo
+Togo
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+United States Minor Outlying Islands
+Uruguay
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+Wallis and Futuna
+Zimbabwe
