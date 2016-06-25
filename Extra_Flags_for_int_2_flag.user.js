@@ -93,7 +93,7 @@ var setup = {
             var selectMenuFlags = "<br/>";
             return htmlFixedStart + '<div>Region: <br/><select id="' + shortId + 'countrySelect">' +
                 '</select></div><br/>' + htmlBackNextButtons +
-                '<br/>' + htmlSaveButton + '</div>' + selectMenuFlags + htmlHelpText + filterRadio;
+                '<br/></div>' + selectMenuFlags + htmlHelpText + filterRadio;
        }
 
         return htmlFixedStart + '<div>Country: <br/><select id="' + shortId + 'countrySelect">' +
