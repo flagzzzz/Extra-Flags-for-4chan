@@ -253,7 +253,7 @@ var setup = {
     },
     init: function () {
         //GM_registerMenuCommand('Extra Flags setup', setup.show;
-        GM_registerMenuCommand('Extra Flags setup', setup.show);
+        GM_registerMenuCommand('Extra Flags beta setup', setup.show);
     }
 };
 
