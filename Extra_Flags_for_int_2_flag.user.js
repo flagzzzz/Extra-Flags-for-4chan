@@ -236,7 +236,7 @@ var setup = {
             radio = document.querySelector('input[name="filterRadio"]:checked').value;
             setup.save(radioVariable, radio);
 
-            alert('Flags set: ' + regions + '\n\n' + 'Refresh all your 4chan tabs and be sure to post using the quick reply window!' + '\n' + 'For information on how to change your flag, visit the unofficial FAQ http://pastebin.com/WrrhBtYX');
+            alert('Flags set: ' + regions + '\n\n' + 'Refresh all your 4chan tabs and be sure to post using the quick reply window!' + '\n' + 'For information on how to change your flag and much more, visit the unofficial FAQ http://pastebin.com/WrrhBtYX');
 
             this.disabled = true;
             this.innerHTML = 'Saving...';
