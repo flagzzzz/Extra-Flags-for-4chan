@@ -45,6 +45,7 @@ var postNrs = [];
 var postRemoveCounter = 60;
 var requestRetryInterval = 5000;
 var flegsBaseUrl = 'https://raw.githubusercontent.com/flaghunters/Extra-Flags-for-int-/master/flags/';
+var countryFlegsBaseUrl = 'https://raw.githubusercontent.com/flagzzzz/Extra-Flags-for-4chan/master/flags/';
 var flagListFile = 'flag_list.txt';
 var backendBaseUrl = 'https://whatisthisimnotgoodwithcomputers.com/';
 var postUrl = 'int/post_flag_api2.php';
@@ -62,8 +63,8 @@ var setup = {
         var htmlBackButton = '<button name="back">Back</button>';
         var htmlNextButton = '<button name="forward">Next</button>';
         var htmlBackNextButtons = '<div>' + htmlBackButton + htmlNextButton + '</div>';
-        var htmlSaveButton = '<div><button name="save" title="Pressing &#34;Save Region&#34; will save the currently selected region as your region">' +
-            'Save Region</button></div><br/>';
+        var htmlSaveButton = '<div><button name="save" title="Pressing &#34;Save Regions&#34; will set your regions to the ones current displayed below.">' +
+            'Save Regions</button></div><br/>';
         var htmlHelpText = '<label name="' + shortId + 'label"> You can go as deep as you like, regions stack.<br/>' +
             'For example; United States, California, Los Angeles<br/></label>' +
             '<label>Country must match your flag! Your flag not here? Open issue here:<br/>' +
@@ -88,12 +89,12 @@ var setup = {
                 '<br/>' + htmlSaveButton + '</div>' + selectMenuFlags + htmlHelpText + filterRadio;
         }
 
-        //if (regions.length == 1) {
-           // var selectMenuFlags = "<br/>";
-           // return htmlFixedStart + '<div>Region: <br/><select id="' + shortId + 'countrySelect">' +
-               // '</select></div><br/>' + htmlBackNextButtons +
-              //  '<br/>' + htmlSaveButton + '</div>' + selectMenuFlags + htmlHelpText + filterRadio;
-       // }
+        if (regions.length == 1) {
+            var selectMenuFlags = "<br/>";
+            return htmlFixedStart + '<div>Region: <br/><select id="' + shortId + 'countrySelect">' +
+                '</select></div><br/>' + htmlBackNextButtons +
+                '<br/>' + htmlSaveButton + '</div>' + selectMenuFlags + htmlHelpText + filterRadio;
+       }
 
         return htmlFixedStart + '<div>Country: <br/><select id="' + shortId + 'countrySelect">' +
             '</select></div><br/>' + htmlBackNextButtons + '<br/>' + htmlHelpText + filterRadio;
@@ -140,7 +141,7 @@ var setup = {
                         if (regions.length > 0) {
                             opt.innerHTML = countriesAvailable[countriesCounter] + " " + "<img src=\"" + flegsBaseUrl + pathNoFlagList + countriesAvailable[countriesCounter] + ".png\"" + " title=\"" + countriesAvailable[countriesCounter] + "\">";
                         } else {
-                            opt.innerHTML = countriesAvailable[countriesCounter];
+                            opt.innerHTML = countriesAvailable[countriesCounter] + " " + "<img src=\"" + countryFlegsBaseUrl + countriesAvailable[countriesCounter] + ".png\"" + " title=\"" + countriesAvailable[countriesCounter] + "\">";
                         }
                         
 
